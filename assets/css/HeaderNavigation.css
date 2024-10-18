@@ -1,0 +1,133 @@
+.search-container {
+    float: right;
+}
+
+.topnav input[type=text] {
+    padding: 6px;
+    margin-top: 8px;
+    font-size: 17px;
+    border: none;
+}
+
+.search-container button {
+    float: right;
+    background: #ddd;
+    font-size: 17px;
+    border: none;
+    cursor: pointer;
+}
+
+.search-container button:hover {
+    background: #ccc;
+}
+
+.dropdown-item:hover {
+    background-color: #cc0000;
+    color: white;
+}
+
+.nested-dropdown.active .nested-dropdown-content {
+    display: block;
+}
+
+.custom-divider {
+    margin-right: 10px;
+    flex-grow: 1;
+    width: 50em;
+    height: 1px;
+    background-color: #000;
+    margin-left: 31.4rem;
+    margin-bottom: 0;
+
+}
+
+.arrow {
+    float: right;
+    transition: transform 0.3s ease;
+    font-size: 1.5em;
+    line-height: 1;
+}
+
+.nested-dropdown .active .arrow {
+    transform: rotate(90deg);
+}
+
+.nested-dropdown {
+    position: relative;
+    display: block;
+}
+
+.nested-dropbtn {
+    padding-top: 5px;
+    padding-bottom: 5px;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+    text-align: left;
+}
+
+.nested-dropdown-content {
+    display: none;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    position: relative;
+    z-index: 1000;
+    padding: 0;
+}
+
+.nested-dropdown-content a {
+    padding-top: 5px;
+    padding-bottom: 5px;
+    text-decoration: none;
+    display: block;
+}
+
+.nested-dropdown-content a:hover {
+    background-color: #cc0000;
+}
+
+.nested-dropbtn.active {
+    background-color: #cc0000;
+    color: white;
+}
+
+.arrow {
+    float: right;
+    transition: transform 0.3s ease;
+    font-size: 1.2em;
+    line-height: 1;
+}
+
+.nested-dropdown .active .arrow {
+    transform: rotate(90deg);
+}
+
+.nested-dropbtn.active .arrow {
+    transform: rotate(90deg);
+}
+
+.nested-dropdown-content a:hover .arrow {
+    color: white;
+}
+
+.nav-link {
+    position: relative;
+    text-decoration: none;
+    padding-bottom: 5px;
+}
+
+.nav-link::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 1px;
+    background-color: currentColor;
+    transform: scaleX(0);
+    transition: transform 0.3s ease;
+}
+
+.nav-link:hover::after {
+    transform: scaleX(1);
+}

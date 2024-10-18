@@ -1,0 +1,149 @@
+* {
+    font-family: 'Roboto', sans-serif;
+}
+
+.album {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 25px;
+}
+
+.custom-album {
+    padding: 5%;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 25px;
+}
+
+.custom-card {
+    border-radius: 8px;
+    width: 19rem;
+    position: relative;
+}
+
+.custom-card-img {
+    width: 19rem;
+    height: 19rem;
+    border-radius: 8px;
+}
+
+.custom-card-body {
+    padding: 0;
+    position: absolute;
+    bottom: 1%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.custom-btn-primary {
+    color: white;
+    background-color: #A12124;
+    width: 16rem;
+    border-radius: 20px;
+    font-size: 17px;
+    font-weight: bold;
+}
+
+.custom-btn-primary:hover {
+    color: white;
+    background-color: #A12124;
+    border-color: white;
+}
+
+.card-img-top {
+    width: 19rem;
+    height: 19rem;
+}
+
+.card-title {
+    color: #777777;
+    padding-top: 5%;
+    text-align: center;
+    font-size: 18px;
+    font-weight: bold;
+    font-stretch: condensed;
+}
+
+.vt-album-title {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    color: white;
+    font-size: 25px;
+    font-weight: bold;
+}
+
+.na-album-title {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    color: #A12124;
+    font-size: 25px;
+    font-weight: bold;
+}
+
+.card {
+    width: 300px;
+    text-align: center;
+    border: 1px solid #ccc;
+}
+
+.thumbnail {
+    position: relative;
+}
+
+.thumbnail-img {
+    width: 100%;
+    height: auto;
+}
+
+.play-button {
+    width: 5rem;
+    height: 5rem;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 1rem;
+    background-color: white;
+    color: #777777;
+    border: none;
+    border-radius: 50%;
+    font-size: 30px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.play-button:hover {
+    background-color: #bbbbbb;
+}
+
+.modal {
+    position: fixed;
+    z-index: 1000;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.8);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.modal-content {
+    position: relative;
+    width: 80%;
+    max-width: 800px;
+}
+
+.close-button {
+    position: absolute;
+    right: 20px;
+    top: 10px;
+    color: white;
+    font-size: 28px;
+    cursor: pointer;
+}
